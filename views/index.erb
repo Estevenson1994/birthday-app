@@ -3,13 +3,31 @@
 
  <h1 align="center"> Hello there! </h1>
  <br>
- <br>
  <h2 align="center"> Whats your name? </h2>
  <br>
- <form align="center" action="/name" method="post">
+ <form align="center" action="/birthday" method="post">
   Name: <input type="text" name="name">
   <br>
  <h2 align="center"> When is your birthday? </h2> 
+  <br>
+  Day: <input type="text" name="day">
+  Month:  <select name="month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+     </select> 
+  <br>
+  <br>
+  <input type="submit" value="Go!" width="100">
  </form>
  
 </body>

@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require_relative './lib/date'
+require_relative './lib/birthday'
 
 class Birthday < Sinatra::Base
 
@@ -10,6 +10,9 @@ class Birthday < Sinatra::Base
 
   post '/birthday' do
     @name = params[:name]    
+    p params[:name]
+    p params[:day]
+    p params[:month]
     @birthday_input = BirthdayDate.new(params[:day], params[:month])
     @birthday = @birthday_input.birthday
     erb(:birthday)

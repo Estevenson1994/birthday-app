@@ -1,5 +1,4 @@
 require 'date'
-
 class BirthdayCalculator
   attr_reader :today, :birthday
   def initialize(birthday, today = Date.today)
